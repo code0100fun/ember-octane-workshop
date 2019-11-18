@@ -1,0 +1,26 @@
+<!-- Team Selector -->
+<TeamSelector />
+
+<!-- Team Sidebar -->
+<TeamSidebar />
+
+<!-- Channel -->
+<main class="flex-1 flex flex-col bg-white overflow-hidden channel">
+
+  <!-- Channel Header -->
+  <ChannelHeader @title="complements" @description="Say nice things about your teammates" />
+
+  <!-- Channel Message List -->
+  <div class="py-4 flex-1 overflow-y-scroll channel-messages-list" role="list">
+
+    <!-- Message -->
+    <ChatMessage />
+
+    <!-- Message -->
+    <ChatMessage />
+
+  </div>
+
+  <!-- Channel Footer -->
+  <ChannelFooter />
+</main>
