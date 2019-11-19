@@ -9,8 +9,8 @@
         <svg class="h-2 w-2 fill-current text-green mr-2" viewBox="0 0 20 20">
           <circle cx="10" cy="10" r="10"></circle>
         </svg>
-        <span class="team-sidebar__current-user-name text-white opacity-50 text-sm">
-          Mike North
+        <span data-test-user class="team-sidebar__current-user-name text-white opacity-50 text-sm">
+          Mike North ({{this.auth.currentUserId}})
         </span>
       </div>
     </div>
@@ -45,8 +45,9 @@
   </nav>
 
   <footer class="mx-4 mb-2 text-white">
-    <LinkTo @route='login' class="text-white rounded bg-grey-darker no-underline hover:bg-red-darker p-2 team-sidebar__logout-button">
+    <button {{on "click" this.auth.logout}} class="text-white rounded bg-grey-dark hover:bg-red-darker p-2 team-sidebar__logout-button"
+    >
       Logout
-    </LinkTo>
+    </button>
   </footer>
 </section>
