@@ -16,6 +16,7 @@ export default class StubbedAuthService extends Service {
   @action
   logout() {
     this.currentUserId = null;
+    this.currentUser = null;
     this.router.transitionTo('login');
   }
 
@@ -23,8 +24,19 @@ export default class StubbedAuthService extends Service {
     return Boolean(this.currentUserId);
   }
 
-  loginWithUserId(id) {
+  async loginWithUserId(id) {
     this.currentUserId = id;
+    await this.loadCurrentUser();
     this.router.transitionTo('teams');
+  }
+
+  async loadCurrentUser() {
+    if (!this.isAuthenticated) {
+      return;
+    }
+    this.currentUser = {
+      id: this.currentUserId,
+      name: 'Mike North',
+    };
   }
 }

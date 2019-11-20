@@ -13,8 +13,17 @@ module('Integration | Component | team-sidebar', function(hooks) {
 
   test('it renders', async function(assert) {
     this.owner.lookup('service:auth').currentUserId = 'LOL';
+    this.set('myTeam', {
+      name: 'LinkedIn',
+      channels: [
+        {
+          name: 'general',
+          id: 'general',
+        },
+      ],
+    });
 
-    await render(hbs`<TeamSidebar />`);
+    await render(hbs`<TeamSidebar @team={{this.myTeam}} />`);
 
     assert.equal(find('[data-test-user]').textContent.trim(), 'Mike North (LOL)');
   });
