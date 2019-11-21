@@ -1,6 +1,12 @@
 {
   "teams": [
     {
+      "id": "heroku",
+      "name": "Heroku",
+      "order": 1,
+      "iconUrl": "/assets/img/heroku.jpg"
+    },
+    {
       "id": "linkedin",
       "name": "LinkedIn",
       "order": 2,
@@ -17,12 +23,6 @@
       "name": "Avengers",
       "order": 4,
       "iconUrl": "/assets/img/avengers.jpg"
-    },
-    {
-      "id": "angrycat",
-      "name": "Angry Cat",
-      "order": 5,
-      "iconUrl": "/assets/img/angry-cat.jpg"
     },
     {
       "id": "javascript",
@@ -143,23 +143,24 @@
       "teamId": "linkedin"
     },
     {
-      "id": "tbt",
-      "name": "throw back thursday",
-      "description": "Remember the good old days? yay, us too.",
-      "teamId": "ms"
-    },
-    {
       "id": "endgame",
       "name": "top secret",
       "description": "for your eyes only",
       "teamId": "avengers"
     },
     {
-      "id": "dominate",
-      "name": "catnip",
+      "id": "front-end-lounge",
+      "name": "front-end-lounge",
       "description": "exchange tips and best practicse on world domination",
-      "teamId": "angrycat",
-      "isDisabled": true
+      "teamId": "heroku",
+      "isDisabled": false
+    },
+    {
+      "id": "talk-haskelle",
+      "name": "talk-haskell",
+      "description": "Want to talk about Haskell with me?",
+      "teamId": "heroku",
+      "isDisabled": false
     },
     {
       "id": "funny",
@@ -395,132 +396,76 @@
       "id": 35
     },
     {
-      "channelId": "dominate",
-      "teamId": "angrycat",
+      "channelId": "front-end-lounge",
+      "teamId": "heroku",
       "body": "Meowhahaha! I crossed the 800K followers mark today!  One step closer to world domination 😈",
       "userId": "8",
       "createdAt": 1556681392393,
       "id": 36
     },
     {
-      "channelId": "dominate",
-      "teamId": "angrycat",
+      "channelId": "front-end-lounge",
+      "teamId": "heroku",
       "body": "What did you cats get up to today?",
       "userId": "8",
       "createdAt": 1556681406684,
       "id": 37
     },
     {
-      "channelId": "dominate",
-      "teamId": "angrycat",
+      "channelId": "front-end-lounge",
+      "teamId": "heroku",
       "body": "Oh and Penguin approached me for another book deal today. Apparently my last book has been hailed \"a literary classic\"...",
       "userId": "8",
       "createdAt": 1556681504008,
       "id": 38
     },
     {
-      "channelId": "dominate",
-      "teamId": "angrycat",
+      "channelId": "front-end-lounge",
+      "teamId": "heroku",
       "body": "Can you believe these human?",
       "userId": "8",
       "createdAt": 1556681514248,
       "id": 39
     },
     {
-      "channelId": "dominate",
-      "teamId": "angrycat",
+      "channelId": "front-end-lounge",
+      "teamId": "heroku",
       "body": "Pfff, 800K on what network? I have 400K fans on Facebook and they hail me as their \"fearsome dictator\", a \"prodigious Scotch drinker\" and \"the angriest cat in the world\"",
       "userId": "9",
       "createdAt": 1556681660966,
       "id": 40
     },
     {
-      "channelId": "dominate",
-      "teamId": "angrycat",
+      "channelId": "front-end-lounge",
+      "teamId": "heroku",
       "body": "AND I hold a Guinness world record  🏆, beat that Bub 🐈",
       "userId": "9",
       "createdAt": 1556681701911,
       "id": 41
     },
     {
-      "channelId": "dominate",
-      "teamId": "angrycat",
+      "channelId": "front-end-lounge",
+      "teamId": "heroku",
       "body": "*stretches* not that anyone's counting, but my videos have been been viewed over 325 million times on Youtube. ",
       "userId": "10",
       "createdAt": 1556681886829,
       "id": 42
     },
     {
-      "channelId": "dominate",
-      "teamId": "angrycat",
+      "channelId": "front-end-lounge",
+      "teamId": "heroku",
       "body": "Holding a Guinness World Record doesn't get us closer to world domination, meow. We need to think outside the box",
       "userId": "10",
       "createdAt": 1556681916083,
       "id": 43
     },
     {
-      "channelId": "dominate",
-      "teamId": "angrycat",
+      "channelId": "front-end-lounge",
+      "teamId": "heroku",
       "body": "But I looooooove cupboard boxes! ",
       "userId": "8",
       "createdAt": 1556681928716,
       "id": 44
-    },
-    {
-      "channelId": "tbt",
-      "teamId": "ms",
-      "body": "Sigh, I miss having a job...",
-      "userId": "3",
-      "createdAt": 1556682112281,
-      "id": 45
-    },
-    {
-      "channelId": "tbt",
-      "teamId": "ms",
-      "body": "It was so nice to \"talk\" and help people around the world with their spelling mistakes!",
-      "userId": "3",
-      "createdAt": 1556682143644,
-      "id": 46
-    },
-    {
-      "channelId": "tbt",
-      "teamId": "ms",
-      "body": "Don't you miss it?",
-      "userId": "3",
-      "createdAt": 1556682148707,
-      "id": 47
-    },
-    {
-      "channelId": "tbt",
-      "teamId": "ms",
-      "body": "Tell me about it, they were so happy when they found the pinball game in Word 97",
-      "userId": "4",
-      "createdAt": 1556682251128,
-      "id": 48
-    },
-    {
-      "channelId": "tbt",
-      "teamId": "ms",
-      "body": "OHH and that flight simulator game in Excel! People always tried to shoot me for some reason",
-      "userId": "3",
-      "createdAt": 1556682314145,
-      "id": 49
-    },
-    {
-      "channelId": "tbt",
-      "teamId": "ms",
-      "body": "At least people remembers you and try to bring you back. I don't think anyone even use floppy disks installation any more...",
-      "userId": "4",
-      "createdAt": 1556682392864,
-      "id": 50
-    },
-    {
-      "channelId": "tbt",
-      "teamId": "ms",
-      "body": "I don't miss Windows 95 though. Dang he was slow!",
-      "userId": "4",
-      "createdAt": 1556682501011,
-      "id": 51
     },
     {
       "channelId": "recruiting",
