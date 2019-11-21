@@ -11,6 +11,7 @@ export default class AuthService extends Service {
    */
   @service router;
   @tracked currentUser = null;
+  @service cookies;
 
   get isAuthenticated() {
     return Boolean(this.currentUserId);
@@ -18,7 +19,7 @@ export default class AuthService extends Service {
 
   @action
   logout() {
-    window.localStorage.removeItem(AUTH_KEY);
+    this.cookies.write(AUTH_KEY, null, {path: '/'});
     this.router.transitionTo('login');
   }
 
@@ -27,7 +28,7 @@ export default class AuthService extends Service {
    * @param {string} userId
    */
   async loginWithUserId(userId) {
-    window.localStorage.setItem(AUTH_KEY, userId);
+    this.cookies.write(AUTH_KEY, userId, {path: '/'});
     this.router.transitionTo('teams');
   }
 
@@ -42,6 +43,6 @@ export default class AuthService extends Service {
   }
 
   get currentUserId() {
-    return window.localStorage.getItem(AUTH_KEY);
+    return this.cookies.read(AUTH_KEY);
   }
 }

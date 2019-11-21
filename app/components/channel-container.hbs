@@ -6,6 +6,10 @@
   {{! an object like  "foo.messages" }}
   {{yield (hash
     messages=this.messages
+    actions=(hash
+      createMessage=this.createMessage
+      deleteMessage=this.deleteMessage
+    )
   )}}
 
 </main>
